@@ -1,0 +1,10 @@
+@media screen and (max-width: $on-medium) {
+  body                   {@include relative-font-size(0.8);}
+  h1, h2, h3, h4, h5, h6 {@include relative-font-size(1.5);}
+  ul, ol                 {margin-left: $spacing-unit / 2;}
+}
+
+@import
+  "base/header",
+  "base/footer"
+;

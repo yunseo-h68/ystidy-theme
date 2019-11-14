@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div id="sitePage" class="site-page">
+  <div id="pageCover" class="page-cover" style="background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ page.background_img | default: 'default_page_cover.jpg' }}');">
+    <div class="page-head">
+      <h1 id="pageTitle" class="page-title">{{ page.title | default: 'Hello Everyone' | escape }}</h1>
+      {% if page.description %}
+        <p id="pageDescription" class="page-description">{{ page.description | escape }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div id="content">
+      {{ content }}
+    </div>
+  </div>
+</div>

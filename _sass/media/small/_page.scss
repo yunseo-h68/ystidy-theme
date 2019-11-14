@@ -1,0 +1,16 @@
+@media screen and (max-width: $on-medium) {
+  #sitePage {
+    .page-cover {
+      padding-top: $header-height * 0.8;
+      height: $cover-height * 0.5;
+
+      .page-head {
+        .page-title {@include relative-font-size(1.3);}
+      }
+    }
+
+    .wrapper {
+      width: 90%;
+    }
+  }
+}

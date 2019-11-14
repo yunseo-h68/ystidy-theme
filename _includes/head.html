@@ -1,0 +1,53 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}" />
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="{{ site.author.name }}" />
+  <meta name="twitter:creator" content="{{ site.author.name }}" />
+
+  {% seo %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {%- if page.layout == 'home' -%}
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+  {%- elsif page.layout == 'form' -%}
+    <link rel="stylesheet" href="{{ '/assets/css/page.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/form.css' | relative_url }}">
+  {%- else -%}
+    <link rel="stylesheet" href="{{ '/assets/css/page.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/content.css' | relative_url }}">
+  {%- endif %}
+
+
+  <link rel="stylesheet" media="(max-width:1300px)" href="{{ '/assets/css/media/medium/style.css' | relative_url }}">
+  {%- if page.layout == 'home' %}
+    <link rel="stylesheet" media="(max-width:1300px)" href="{{ '/assets/css/media/medium/home.css' | relative_url }}">
+  {%- elsif page.layout == 'form' -%}
+  <link rel="stylesheet" media="(max-width:1300px)" href="{{ '/assets/css/media/medium/page.css' | relative_url }}">
+  <link rel="stylesheet" media="(max-width:1300px)" href="{{ '/assets/css/media/medium/form.css' | relative_url }}">
+  {% else %}
+    <link rel="stylesheet" media="(max-width:1300px)" href="{{ '/assets/css/media/medium/page.css' | relative_url }}">
+    <link rel="stylesheet" media="(max-width:1300px)" href="{{ '/assets/css/media/medium/content.css' | relative_url }}">
+  {%- endif %}
+
+  <link rel="stylesheet" media="(max-width:600px)" href="{{ '/assets/css/media/small/style.css' | relative_url }}">
+  {%- if page.layout == 'home' -%}
+    <link rel="stylesheet" media="(max-width:600px)" href="{{ '/assets/css/media/small/home.css' | relative_url }}">
+  {%- elsif page.layout == 'form' -%}
+    <link rel="stylesheet" media="(max-width:600px)" href="{{ '/assets/css/media/small/page.css' | relative_url }}">
+    <link rel="stylesheet" media="(max-width:600px)" href="{{ '/assets/css/media/small/form.css' | relative_url }}">
+  {%- else -%}
+    <link rel="stylesheet" media="(max-width:600px)" href="{{ '/assets/css/media/small/page.css' | relative_url }}">
+    <link rel="stylesheet" media="(max-width:600px)" href="{{ '/assets/css/media/small/content.css' | relative_url }}">
+  {% endif %}
+
+
+  <link rel="stylesheet" href="{{ '/assets/fontello/css/fontello-embedded.css' | relative_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" >
+</head>

@@ -1,0 +1,12 @@
+#siteHeader{
+  @media screen and (max-width: $on-medium) {
+    &, a {
+      height: $header-height * 0.8;
+      line-height: $header-height * 0.8;
+    }
+
+    .site-title {
+      @include relative-font-size(0.8);
+    }
+  }
+}

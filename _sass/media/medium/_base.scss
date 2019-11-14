@@ -1,0 +1,11 @@
+@media screen and (max-width: $on-large) {
+  .wrapper {
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
+@import
+  "base/header",
+  "base/footer"
+;

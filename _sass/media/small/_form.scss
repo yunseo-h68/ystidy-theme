@@ -1,0 +1,33 @@
+@media screen and (max-width: $on-medium) {
+    #siteForm {
+      input,
+      textarea {
+        @include relative-font-size(0.7);
+        padding: 10px;
+      }
+
+      input::placeholder,
+      textarea::placeholder   {
+        @include relative-font-size(0.7);
+      }
+
+      .submit-button {
+        @include relative-font-size(0.7);
+        margin-top: 20px;
+        line-height: 1.5;
+        display: inline-block;
+        background-color: #efefef;
+        padding: 8px 12px;
+        color: #1e1e1e;
+        border: none;
+      }
+
+      .form-title {
+        @include relative-font-size(1);
+      }
+
+      .form-description {
+        @include relative-font-size(0.8);
+      }
+    }
+}

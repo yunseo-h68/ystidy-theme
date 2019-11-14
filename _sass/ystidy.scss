@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family:       'Raleway', 'Nanum Gothic', 'Noto Sans KR', Verdana, sans-serif !default;
+$base-font-size:         16px !default;
+$base-font-weight:       400 !default;
+$base-line-height:       1.5 !default;
+$small-font-size:        $base-font-size * 0.875 !default;
+
+$spacing-unit:           80px !default;
+
+$header-height:          60px !default;
+$cover-height:           550px !default;
+$langMenu-height:        180px !default;
+
+$text-color:             #000000 !default;
+$grey-color:             #828282 !default;
+$grey-color-light:       lighten($grey-color, 40%) !default;
+$grey-color-dark:        darken($grey-color, 25%) !default;
+$highlighter-color:      #b0eb8d !default;
+$highlighter-color-2:    #f67c00 !default;
+$background-color:       #ffffff !default;
+$background-hv-color:    #1e1e1e !default;
+
+$table-text-align:       left !default;
+$screen-out-display:     none !default;
+
+
+// Width of the content area
+$content-width:          800px !default;
+
+$on-palm:                600px !default;
+$on-laptop:              1300px !default;
+
+$on-medium:              $on-palm !default;
+$on-large:               $on-laptop !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+// Notice the following mixin uses max-width, in a deprecated, desktop-first
+// approach, whereas media queries used elsewhere now use min-width.
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}

@@ -1,0 +1,12 @@
+@media screen and (max-width: $on-medium) {
+  .home-section-wrap {
+    .wrapper { padding: 0 10px;}
+  }
+}
+
+@import
+  "home/mainSlideShow",
+  "home/timeAndDate",
+  "home/socialLinks",
+  "home/welcomeCube"
+;

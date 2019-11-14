@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div id="siteHome" class="site-home">
+  <div id="mainSlideShow" class="main-slideshow">
+    {% for slides in site.data.home_mainSlides %}
+      <div class="main-slide" style="background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ slides.background_img | default: 'default_mainSlides_cover.png' }}');">
+        <div class="wrapper">
+          <h2 class="main-slide_title">{{ slides.title | escape }}</h2>
+          <p class="main-slide_description">{{ slides.description | escape }}</p>
+          <a class="main-slide_link" href="{{ slides.link | default: '#' }}">See More &#8594;</a>
+        </div>
+      </div>
+    {% endfor %}
+
+    <a class="main-prev" onclick="mainPlusSlides(-1)">&#10094;</a>
+    <a class="main-next" onclick="mainPlusSlides(1)">&#10095;</a>
+
+
+    <div class="main-dot-wrap">
+      {% for slides in site.data.home_mainSlides %}
+        <span class="main-dot" onclick="mainCurrentSlide( {{ slides.order }})"></span>
+      {% endfor %}
+    </div>
+
+    <script src="{{ '/assets/javascripts/home_mainSlides.js' | relative_url }}"></script>
+  </div>
+
+  <div class="home-section-wrap">
+    <section>
+      <div class="wrapper">
+        <h2>Date</h2>
+        <p id="time"></p>
+        <p id="date"></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+        <h2>Links</h2>
+        {% include social_links.html %}
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+        <h2>Welcome</h2>
+        {% include welcome_cube.html %}
+      </div>
+    </section>
+    <script src="{{ '/assets/javascripts/home_section.js' | relative_url }}"></script>
+  </div>
+</div>

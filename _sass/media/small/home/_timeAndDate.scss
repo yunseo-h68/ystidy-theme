@@ -1,0 +1,4 @@
+@media screen and (max-width: $on-medium) {
+  #time {@include relative-font-size(1.8);}
+  #date {@include relative-font-size(0.8);}
+}

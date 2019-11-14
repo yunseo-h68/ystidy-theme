@@ -1,0 +1,39 @@
+#sitePage {
+  .page-cover {
+    display: table-cell;
+    width: 100vw;
+    height: $cover-height;
+    vertical-align: middle;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .page-head {
+      text-align: center;
+      color: #1e1e1e;
+
+      .page-title {
+        @include relative-font-size(3);
+        padding: 5px 10px;
+        display: inline-block;
+        border-bottom: 2px solid #1e1e1e;
+        margin: 0;
+      }
+
+      .page-description {
+        @include relative-font-size(1.2);
+        position: relative;
+        padding-bottom: 30px;
+        margin: 0;
+      }
+    }
+  }
+
+  .wrapper {
+    width: $content-width;
+    margin: $spacing-unit auto;
+    padding: 0;
+  }
+}

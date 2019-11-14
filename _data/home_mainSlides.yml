@@ -1,0 +1,24 @@
+# home image slides
+- title: Ystidy!  
+  description: Ystidy는 Tidy하고 Simple합니다
+  link: /about/
+  background_img: ystidy_mainSlides_cover_1.png
+  order: 1
+
+- title: Ystidy!
+  description: Ystidy는 프로젝트 페이지를 지원합니다
+  link:
+  background_img: ystidy_mainSlides_cover_2.png
+  order: 2
+
+- title: Ystidy!
+  description: Ystidy는 꿈 리스트 페이지를 지원합니다
+  link:
+  background_img: ystidy_mainSlides_cover_3.jpg
+  order: 3
+
+- title: Ystidy2!
+  description: Ystidy는 꿈 리스트 페이지를 지원합니다
+  link:
+  background_img: ystidy_mainSlides_cover_3.jpg
+  order: 4

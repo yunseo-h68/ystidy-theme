@@ -1,0 +1,11 @@
+@media screen and (max-width: $on-medium) {
+  #socialLinks {
+    li {
+      padding: 3px;
+      a {
+        @include relative-font-size(1.25);
+        padding: 8px;
+      }
+    }
+  }
+}

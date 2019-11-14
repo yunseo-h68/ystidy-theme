@@ -1,0 +1,10 @@
+<div id="welcomeCube" class="welcome-cube">
+  <div class="scene">
+    <div class="cube">
+      <div class="cube__face cube__face--front" style="background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ site.data.welcome_cube.front.background_img | default: 'default_welcomeCube_cover_1.png' }}');">{{ site.data.welcome_cube.front.text | truncate: 25 | escape }}</div>
+      <div class="cube__face cube__face--back"  style="background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ site.data.welcome_cube.back.background_img  | default: 'default_welcomeCube_cover_1.png' }}');">{{ site.data.welcome_cube.back.text  | truncate: 25 | escape }}</div>
+      <div class="cube__face cube__face--right" style="background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ site.data.welcome_cube.right.background_img | default: 'default_welcomeCube_cover_2.png' }}');">{{ site.data.welcome_cube.right.text | truncate: 25 | escape }}</div>
+      <div class="cube__face cube__face--left"  style="background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ site.data.welcome_cube.left.background_img  | default: 'default_welcomeCube_cover_2.png' }}');">{{ site.data.welcome_cube.left.text  | truncate: 25 | escape }}</div>
+    </div>
+  </div>
+</div>

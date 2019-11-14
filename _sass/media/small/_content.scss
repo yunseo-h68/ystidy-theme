@@ -1,0 +1,21 @@
+@media screen and (max-width: $on-medium) {
+  #content {
+    h1                      {@include relative-font-size(1.5);}
+    h2                      {@include relative-font-size(1.3);}
+    h3                      {@include relative-font-size(1.1);}
+    h4                      {@include relative-font-size(1);}
+    blockquote              {@include relative-font-size(0.9125);}
+    button                  {@include relative-font-size(0.6);}
+
+    input,
+    textarea,
+    select                  {@include relative-font-size(0.8);}
+    
+    input::placeholder,
+    textarea::placeholder   {@include relative-font-size(0.5);}
+    pre, code               {@include relative-font-size(0.6375);}
+
+    input,
+    textarea                {padding: 8px;border-radius: 3px;}
+  }
+}

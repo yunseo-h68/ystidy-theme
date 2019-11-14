@@ -1,0 +1,16 @@
+# home welcome cube
+front:
+  text: Hello Everyone!
+  background_img: ystidy_welcomeCube_cover_1.png
+
+right:
+  text: 이 테마는 Tidy하고 Simple합니다
+  background_img: ystidy_welcomeCube_cover_2.png
+
+back:
+  text: 또한 누구나 자유롭게 사용가능합니다
+  background_img: ystidy_welcomeCube_cover_1.png
+
+left:
+  text: :)
+  background_img: ystidy_welcomeCube_cover_2.png

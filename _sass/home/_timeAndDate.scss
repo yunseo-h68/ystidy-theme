@@ -1,0 +1,12 @@
+#time {
+  @include relative-font-size(2);
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  padding-top: $spacing-unit / 2;
+  margin: 0;
+}
+
+#date {
+  text-align: center;
+  margin: 0;
+}

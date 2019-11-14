@@ -1,0 +1,7 @@
+# project page
+- project:
+    name: # 프로젝트 이름을 여기에 작성하세요
+    description:  # 프로젝트에 대한 설명
+    period: # 프로젝트를 진행한 기간
+    source:   # 프로젝트 소스 링크(예시. github repository 링크)
+    img:  # 프로젝트를 설명할 수 있는 이미지

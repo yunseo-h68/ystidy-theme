@@ -1,0 +1,11 @@
+<ul id="socialLinks" class="social-links">
+  <li><a href="#" title="About Me" aria-hidden="true"><i class="icon-user-o"></i></a></li>
+  <li><a href="#" title="{{ site.author.name }}'s Dream List" aria-hidden="true"><i class="icon-star-empty"></i></a></li>
+  {% if site.author.github_username %}
+    <li><a href="https://github.com/{{ site.author.github_username }}" title="{{ site.author.name }}'s github username" aria-hidden="true" target="_blank" rel="noopener"><i class="icon-github-circled"></i></a></li>
+  {% endif %}
+  {% if site.author.email %}
+    <li><a href="mailto:{{ site.author.email }}" title="{{ site.author.name }}'s email" aria-hidden="true"><i class="icon-mail"></i></a></li>
+  {% endif %}
+  <li><a href="#" title="RSS" aria-hidden="true"><i class="icon-rss"></i></a></li>
+</ul>

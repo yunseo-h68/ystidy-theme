@@ -1,0 +1,14 @@
+@media screen and (max-width: $on-medium) {
+  #welcomeCube {
+    .scene,
+    .cube,
+    .cube__face         {width: 275px;height: 60px;}
+  
+    .cube__face         {@include relative-font-size(0.8);line-height: 60px;}
+
+    .cube__face--front  { transform: rotateY(  0deg) translateZ(137.5px);}
+    .cube__face--right  { transform: rotateY( 90deg) translateZ(137.5px);}
+    .cube__face--back   { transform: rotateY(180deg) translateZ(137.5px);}
+    .cube__face--left   { transform: rotateY(-90deg) translateZ(137.5px);}
+  }
+}

@@ -1,0 +1,39 @@
+title: Your awesome title # your site name
+description: Write an awesome description for your  your new site  here
+
+author:
+  name: your-name
+  email: yunseo.h68@gmail.com
+  github_username: your-github-username
+  linkedin_id: your-linkedin_id
+  facebook_username: your-facebook-github_username
+  twitter_username: your-twitter_username
+
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+lang: ko
+theme: jekyll-theme-ystidy # remote_theme: yunseo-h / ystidy-theme
+
+
+# jekyll-paginate-v2 settings
+permalink: /:year/:month/
+pagination:
+  enabled: true
+  per_page: 12
+  sort_reverse: true
+  sort_field: 'date'
+  title: ':title'
+  trail:
+    before: 2
+    after: 2
+
+# Build settings
+markdown: kramdown
+plugins:
+#  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,8 @@
+@media screen and (max-width: $on-large) {
+  #welcomeCube {
+      .scene,
+      .cube,
+      .cube__face {height: 80px;}
+      .cube__face {@include relative-font-size(1);line-height: 80px;}
+  }
+}

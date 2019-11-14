@@ -1,0 +1,23 @@
+@media screen and (max-width: $on-large) {
+  .home-section-wrap {
+    padding: 35px 0 75px;
+
+    section {
+      width: 100%;
+      clear: both;
+
+      .wrapper {
+        margin-top: 35px;
+
+        h2 {@include relative-font-size(0.8);padding-left: 10px;}
+      }
+    }
+  }
+}
+
+@import
+  "home/mainSlideShow",
+  "home/timeAndDate",
+  "home/socialLinks",
+  "home/welcomeCube"
+;

@@ -1,0 +1,5 @@
+#siteFooter{
+  @media screen and (max-width: $on-medium) {
+    @include relative-font-size(0.6);
+  }
+}

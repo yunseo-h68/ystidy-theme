@@ -1,0 +1,71 @@
+#siteForm {
+  input, textarea, button {
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+  }
+
+  input, textarea {
+    min-width : 100%;
+    color: $text-color;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid #cfcfcf;
+  }
+
+  input {
+    margin:10px 0;
+    vertical-align: middle;
+    display: block;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    @include relative-font-size(0.9);
+    color: darken($grey-color, 6%);
+  }
+
+  button {
+    cursor: pointer;
+    vertical-align: middle;
+    display: block;
+  }
+
+
+  .submit-button {
+    @include relative-font-size(0.9);
+    margin-top: 20px;
+    line-height: 1.5;
+    display: inline-block;
+    background-color: #efefef;
+    padding: 8px 12px;
+    color: #1e1e1e;
+    border: none;
+  }
+
+  .submit-button:hover {
+    background-color: #1e1e1e;
+    color: #efefef;
+  }
+
+  .submitter,
+  .message {
+    h2 {
+      @include relative-font-size(0.9);
+      margin: 0;
+    }
+  }
+
+  .message {
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .form-title {
+    @include relative-font-size(1.5);
+  }
+
+  .form-description {
+    @include relative-font-size(1);
+  }
+}
